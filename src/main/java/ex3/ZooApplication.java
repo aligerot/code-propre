@@ -1,18 +1,26 @@
 package ex3;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ZooApplication {
 
 	public static void main(String[] args) {
 		Zoo zoo = new Zoo("Thoiry");
+
 		
-		zoo.addAnimal("Gazelle", "MAMMIFERE", "HERBIVORE");
-		zoo.addAnimal("Zèbre", "MAMIFERE", "HERBIVORE");
-		zoo.addAnimal("Lion", "MAMMIFERE", "HERBIVORE");
-		zoo.addAnimal("Panthère", "MAMMIFERE", "CARNIVORE");
-		zoo.addAnimal("Requin blanc", "POISSON", "HERBIVORE");
-		zoo.addAnimal("Truite dorée", "POISSON", "HERBIVORE");
-		zoo.addAnimal("Boa constrictor", "SERPENT", "CARNIVORE");
-		zoo.addAnimal("Python", "SERPENT", "CARNIVORE");
+		 zoo.addAnimal(new Animaux("Gazelle", "MAMMIFERE", "HERBIVORE"));
+		zoo.addAnimal(new Animaux("Zèbre", "MAMIFERE", "HERBIVORE"));
+		zoo.addAnimal(new Animaux("Lion", "MAMMIFERE", "HERBIVORE"));
+		zoo.addAnimal( new Animaux("Panthère", "MAMMIFERE", "CARNIVORE"));
+		zoo.addAnimal( new Animaux("Requin blanc", "POISSON", "HERBIVORE"));
+		zoo.addAnimal( new Animaux("Truite dorée", "POISSON", "HERBIVORE"));
+		zoo.addAnimal( new Animaux("Boa constrictor", "SERPENT", "CARNIVORE"));
+		zoo.addAnimal( new Animaux("Python", "SERPENT", "CARNIVORE"));
+
+
+
+		zoo.afficherListeAnimaux();
 	}
 
 }
